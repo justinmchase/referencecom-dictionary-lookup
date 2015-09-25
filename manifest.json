@@ -1,0 +1,21 @@
+{
+   "background_page": "background.html",
+   "content_scripts": [ {
+      "all_frames": true,
+      "js": [ "core.js" ],
+      "matches": [ "http://*/*", "https://*/*" ]
+   } ],
+   "description": "Lookup selected text at reference.com",
+   "icons": {
+      "16": "book_open.png"
+   },
+   "key": "MIGfMA0GCSqGSIb3DQEBAQUAA4GNADCBiQKBgQD2lrgWiqRTb4BLT4JUWG5ETcay0f5nNCQrxv1K1IgvqXQQslTX2PMC+BN/OI5HbqUnkH7S3hMCqdKoik6SUoZEZqh5yC3TMdER2BKpt9chBHlkgPKnXrgXT+jWN1C54OsbrdE7ahhixUfC43JHoWowKMZ+R03dzOpJjAq01aL64wIDAQAB",
+   "name": "reference.com dictionary lookup",
+   "page_action": {
+      "default_icon": "book_open.png",
+      "default_title": "Dictionary Lookup"
+   },
+   "permissions": [ "tabs", "contextMenus" ],
+   "update_url": "http://clients2.google.com/service/update2/crx",
+   "version": "1.0.2"
+}
